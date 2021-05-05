@@ -5,7 +5,7 @@ import threading
 
 def threaded(c):
     received_imsi = c.recv(1024).decode()
-    print("Received imsi from UE : " + received_imsi)
+    print("Received imsi from vUE : " + received_imsi)
 
     # Create a socket object
     proxys = socket.socket()
@@ -23,12 +23,12 @@ def threaded(c):
     xres = sep_str[2]
 
     c.send(auth_challenge.encode())
-    print("MME sent auth_challenge to UE : " + auth_challenge)
+    print("MME sent auth_challenge to vUE : " + auth_challenge)
     # close the connection
     proxys.close()
 
     received_res = c.recv(1024)
-    print("MME received RES from UE : " + received_res.decode())
+    print("MME received RES from vUE : " + received_res.decode())
 
     if xres == received_res.decode():
         success = "200 ok"

@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'Proxy',
     'Edge',
     'UE',
+    'oidc_provider',
+    'ProxyIDP',
+    'ForeignFog',
 ]
 
 MIDDLEWARE = [
@@ -128,4 +131,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = "dashboard"
+LOGIN_URL = '/accounts/login/'
+OIDC_USERINFO = 'FogEdge.oidc_provider_settings.userinfo'
+OIDC_EXTRA_SCOPE_CLAIMS = 'FogEdge.oidc_provider_settings.CustomScopeClaims'
+
 
