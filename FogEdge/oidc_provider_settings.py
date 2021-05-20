@@ -2,7 +2,6 @@ from oidc_provider.lib.claims import ScopeClaims
 from django.utils.translation import ugettext as _
 
 
-
 def userinfo(claims, user):
     claims['name'] = '{0} {1}'.format(user.first_name, user.last_name)
     claims['given_name'] = user.first_name
@@ -24,8 +23,10 @@ class CustomScopeClaims(ScopeClaims):
         # self.scopes - List of scopes requested.
         # self.client - Client requesting this claims.
         dic = {
-            'autn': "225b5ce8b199b49faa5f0a2ee238a6uy",
-            'rand': "23553cbe9637a89d218ae64dae47bf35",
+             'autn': "225b5ce8b199b49faa5f0a2ee238a6uy",
+             'rand': "23553cbe9637a89d218ae64dae47bf35",
+           #  'autn': autn,
+            # 'rand': rand
         }
 
         return dic

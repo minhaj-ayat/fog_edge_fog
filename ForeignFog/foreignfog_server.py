@@ -2,6 +2,8 @@ import socket
 from _thread import *
 import threading
 
+authenticated = False
+
 
 def threaded(c):
     received_imsi = c.recv(1024).decode()

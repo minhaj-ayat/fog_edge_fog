@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7f1d3019-b48d-473f-8774-758a4a96a012" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FogEdge/oidc_provider_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FogEdge/oidc_provider_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForeignFog/foreignfog_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/ForeignFog/foreignfog_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForeignFog/templates/foreignfog_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/ForeignFog/templates/foreignfog_home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyIDP/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyIDP/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +36,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../T2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Python.ue">
+  <component name="RunManager" selected="Python.fog_server">
     <configuration name="fog_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FtoE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -56,7 +61,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ue" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="foreignfog_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FtoE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,11 +69,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ForeignFog" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UE/ue.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ForeignFog/foreignfog_server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -77,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="vHSS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="proxyidp_vUE" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FtoE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,11 +90,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Proxy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProxyIDP" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Proxy/vHSS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProxyIDP/proxyidp_vUE.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,7 +103,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="vUser (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="vUser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FtoE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -143,10 +148,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.fog_server" />
-        <item itemvalue="Python.ue" />
+        <item itemvalue="Python.vUser" />
         <item itemvalue="Python.visited_mme" />
-        <item itemvalue="Python.vUser (1)" />
-        <item itemvalue="Python.vHSS" />
+        <item itemvalue="Python.proxyidp_vUE" />
+        <item itemvalue="Python.foreignfog_server" />
       </list>
     </recent_temporary>
   </component>

@@ -8,6 +8,10 @@ from django.contrib.auth.models import User
 def my_view(request):
     name = "user1"
     pwd = "123"
+    if User.objects.filter(username=name).exists():
+        user = User.objects.get(username=name)
+        user.delete()
+
     user = User.objects.create_user(name, 'user1@p.com', pwd)
 
     # At this point, user is a User object that has already been saved

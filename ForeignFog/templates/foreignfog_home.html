@@ -5,7 +5,30 @@
     <title>Title</title>
 </head>
 <body>
-{% csrf_token %}
-<h1> Welcome to foreign fog</h1>
+    {% csrf_token %}
+    <h1> Welcome to foreign fog</h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://www.sakimura.org/test/openidconnect.js"></script>
+
+    <script type="text/javascript">
+
+       $(function() {
+        // Get Access Token
+        var token = OIDC.getAccessToken();
+        console.log(token);
+
+        // Make userinfo request using access_token.
+        if (token !== null) {
+            $.get('http://localhost:8000/userinfo/?access_token='+token, function( data ) {
+                alert('USERINFO: '+ JSON.stringify(data));
+            });
+        }
+    });
+    </script>
+
+
+
+
 </body>
 </html>
